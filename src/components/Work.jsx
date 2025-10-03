@@ -1,5 +1,6 @@
 import { useState } from "react"
-import { FaApple, FaGoogle, FaMicrosoft, FaFacebook, FaMarker } from "react-icons/fa"
+import { FaApple, FaGoogle, FaMicrosoft, FaMarker } from "react-icons/fa"
+// import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 
 const Work = () => {
     const companies = [
@@ -117,26 +118,35 @@ const Work = () => {
             <p className="text-gray-400 text-lg">I switch a lot of companies. it's mostly about the culture.</p>
         </div>
         <div className="flex gap-5 m-20">
-            <div className="flex lg:flex-col gap-8 text-white">
-            {companies.map((company, index) => (
-                <button 
+            {/* <BackgroundBeamsWithCollision className="rounded-lg"> */}
+              <div className="flex lg:flex-col gap-8 relative z-20 p-6">
+                {companies.map((company, index) => (
+                <div
                 key={index}
-                onClick={() => setCompanyDetail(companyDetail === index? 0 : index)}
-                className={`flex items-center gap-2 rounded ${companyDetail === index? "bg-gray-800 font-bold px-4 py-2 " : ""}`}>
-                    {company.icon} {company.name}
-                </button>   
-             ))}
-            </div>
+                    onClick={() => setCompanyDetail(companyDetail === index? 0 : index)}
+                    className={`flex items-center gap-2 rounded cursor-pointer transition-all ${companyDetail === index? "bg-[#3d3d3d] px-4 py-2 " : ""}`}>  
+                    <button className="rounded-full p-1 bg-[#535353]">
+                    {company.icon} 
+                    </button>   
+                    <button className="text-[#8f8f8f]">
+                    {company.name}
+                    </button>   
+                </div>    
+                ))}
+              </div>
+            {/* </BackgroundBeamsWithCollision> */}
+            
             {/* details of selected company */}
             <div 
-              className="flex flex-col gap-4 text-white mb-4">
-              <h1>{detail.title}{" "}<small className="text-blue-400">{detail.companyName}</small></h1>
-              <h5>{detail.time}</h5>
-              <h5>{detail.location}</h5>
-    
-              <div className="flex flex-col gap-3">
+              className="flex flex-col gap-4 mb-4">
+                <div className="flex flex-col gap-1 font-semibold">
+                    <h1 className="font-bold text-white text-3xl">{detail.title}{" "}<small className="text-blue-400 text-2xl font-bold">{detail.companyName}</small></h1>
+                    <h5 className="text-[16px] text-[#8f8f8f]">{detail.time}</h5>
+                    <h5 className="text-[16px] text-[#8f8f8f]">{detail.location}</h5>
+                </div>
+              <div className="flex flex-col gap-2">
                  {companies[companyDetail].works.map((work, id) => (
-                <div key={id} className="flex items-center gap-2 text-white">
+                <div key={id} className="flex items-center gap-2 text-[15px] text-[#8f8f8f] font-semibold">
                    {work.mark}  {work.desc}
                 </div>
                    ))}
