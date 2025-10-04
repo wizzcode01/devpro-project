@@ -5,7 +5,7 @@ const ProjectPage = () => {
    return (
      <div className="bg-zinc-900">  
       <Navbar/> 
-      <div className="max-w-5xl mx-auto px-4"> 
+      <div className="max-w-5xl mx-auto p-10"> 
         <div className="flex flex-col gap-6 mt-20">
            <h1 className="text-5xl font-bold text-white">I've been building a <span className="text-blue-400">lot of things</span></h1>
            <div className="leading-10 text-zinc-300 text-[15px] text-lg">
