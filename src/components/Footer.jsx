@@ -6,7 +6,7 @@ import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa"
 const Footer = () => {
   return (
     <div className='max-w-5xl mx-auto '>
-        <div className='flex flex-col items-center justify-center gap-5 text-zinc-100 p-40'>
+        <div className='flex flex-col items-center justify-center gap-5 text-zinc-100 p-32'>
             <Link to="/" className="flex items-center gap-2">
                 <div className="w-8 h-8 flex items-center justify-center font-bold rounded-full">
                     <img src={Logo} alt="logo-img" className="rounded-full" />
