@@ -4,7 +4,7 @@ import Logo from '../assets/avatar.webp'
 const Navbar = () => {
   return (
     <div className=' flex items-center justify-evenly w-full'>
-    <nav className="bg-[#202020] text-white border border-[#3f3f3f] flex items-center rounded-2xl h-13 px-4 w-[95%] md:w-2xl m-7 ">
+    <nav className="bg-zinc-800 text-white border border-[#3f3f3f] flex items-center rounded-2xl h-13 px-4 w-[95%] md:w-2xl m-7 ">
      <div className='flex items-center gap-4 md:gap-12 text-[15px] font-semibold'>
       <Link to="/" className="flex items-center gap-2">
         <div className="w-8 h-8 flex items-center justify-center font-bold rounded-full overflow-hidden">
@@ -21,7 +21,7 @@ const Navbar = () => {
     </div>   
     </nav>
       <div>
-        <button className="bg-gray-700 text-white text-[15px] px-3 py-4 rounded-lg hover:bg-gray-300 cursor-pointer transition-colors ">
+        <button className="text-white text-sm bg-gradient-to-r from-[#464d55] to-[#25292e] px-4 py-4 duration-150 active:outline-none hover:opacity-80 rounded-lg">
           Download CV
         </button>
       </div>

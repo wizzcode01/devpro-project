@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { FaApple, FaGoogle, FaMicrosoft, FaMarker } from "react-icons/fa"
+import { FaApple, FaGoogle, FaMicrosoft, FaMarker, FaCheckCircle, FaCheck } from "react-icons/fa"
 // import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 
 const Work = () => {
@@ -16,15 +16,15 @@ const Work = () => {
             }],
           works : [
             {
-                mark: <FaMarker/>,
+                mark: <FaCheckCircle/>,
                 desc : "Worked on the Apple Music team"
             },
             {
-                mark: <FaMarker/>,
+                mark: <FaCheckCircle/>,
                 desc : "Increased the revenue of the company from $80 billion to $1 Trillion"
             },
             {
-                mark: <FaMarker/>,
+                mark: <FaCheckCircle/>,
                 desc : "Built a new feature that allowed users to listen to music while they were sleeping"
             }
           ]
@@ -41,15 +41,15 @@ const Work = () => {
             }],
           works : [
             {
-                mark: <FaMarker/>,
+                mark: <FaCheckCircle/>,
                 desc : "Worked on the Google Maps team"
             },
             {
-                mark: <FaMarker/>,
+                mark: <FaCheckCircle/>,
                 desc : "Helped people get lost from point A to point B in shortest time"
             },
             {
-                mark: <FaMarker/>,
+                mark: <FaCheckCircle/>,
                 desc : "Worked directly with Dijkstra to build the shortest path algorithm - but better."
             }
           ]
@@ -67,15 +67,15 @@ const Work = () => {
         ],
           works : [
             {
-                mark: <FaMarker/>,
+                mark: <FaCheckCircle/>,
                 desc : "Worked on the Microsoft Teams team"
             },
             {
-                mark: <FaMarker/>,
+                mark: <FaCheckCircle/>,
                 desc : "Carefully crafted the tune that plays when you are on a call with your boss"
             },
             {
-                mark: <FaMarker/>,
+                mark: <FaCheckCircle/>,
                 desc : "Built a new feature that allowed users to mute their mic with a single click"
             }
           ]
@@ -93,15 +93,15 @@ const Work = () => {
             ],
           works : [
             {
-                mark: <FaMarker/>,
+                mark: <FaCheckCircle/>,
                 desc : "Worked on the Netflix team"
             },
             {
-                mark: <FaMarker/>,
+                mark: <FaCheckCircle/>,
                 desc : "Broke the prod on the first day itself"
             },
             {
-                mark: <FaMarker/>,
+                mark: <FaCheckCircle/>,
                 desc : "Coined the term Netflix and Chill - which is now used by millions of people"
             }
           ]
@@ -115,7 +115,7 @@ const Work = () => {
     <div className="lg:ml-48">
         <div className="text-white flex flex-col gap-4">
             <h1 className="text-3xl font-semibold text-white">Work Experience</h1>
-            <p className="text-gray-400 text-lg">I switch a lot of companies. it's mostly about the culture.</p>
+            <p className="text-zinc-400 text-lg">I switch a lot of companies. it's mostly about the culture.</p>
         </div>
         <div className="flex gap-5 m-20">
             {/* <BackgroundBeamsWithCollision className="rounded-lg"> */}
@@ -128,7 +128,7 @@ const Work = () => {
                     <button className="rounded-full p-1 bg-[#535353]">
                     {company.icon} 
                     </button>   
-                    <button className="text-[#8f8f8f]">
+                    <button className="text-zinc-400">
                     {company.name}
                     </button>   
                 </div>    
@@ -139,15 +139,18 @@ const Work = () => {
             {/* details of selected company */}
             <div 
               className="flex flex-col gap-4 mb-4">
-                <div className="flex flex-col gap-1 font-semibold">
+                <div className="flex flex-col gap-1">
                     <h1 className="font-bold text-white text-3xl">{detail.title}{" "}<small className="text-blue-400 text-2xl font-bold">{detail.companyName}</small></h1>
-                    <h5 className="text-[16px] text-[#8f8f8f]">{detail.time}</h5>
-                    <h5 className="text-[16px] text-[#8f8f8f]">{detail.location}</h5>
+                    <h5 className="text-[16px] text-zinc-400">{detail.time}</h5>
+                    <h5 className="text-[16px] text-zinc-400">{detail.location}</h5>
                 </div>
               <div className="flex flex-col gap-2">
                  {companies[companyDetail].works.map((work, id) => (
-                <div key={id} className="flex items-center gap-2 text-[15px] text-[#8f8f8f] font-semibold">
-                   {work.mark}  {work.desc}
+                <div key={id} className="flex items-center gap-2 text-[15px] text-zinc-400 ">
+                  <div className="text-blue-400">
+                   {work.mark}
+                   </div> 
+                    {work.desc}
                 </div>
                    ))}
               </div>
