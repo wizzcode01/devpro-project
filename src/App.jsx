@@ -4,6 +4,7 @@ import Landing from './pages/Landing'
 import About from './pages/About'
 import ProjectPage from './pages/ProjectPage'
 import BlogPage from './pages/BlogPage'
+import Event from './pages/Event'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/project" element={<ProjectPage/>} />
           <Route path="/blogs" element={<BlogPage/>} />
+          <Route path="/event" element={<Event/>} />
         </Routes>
       </Router>
     </>
