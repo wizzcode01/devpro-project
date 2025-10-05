@@ -5,6 +5,7 @@ import About from './pages/About'
 import ProjectPage from './pages/ProjectPage'
 import BlogPage from './pages/BlogPage'
 import Event from './pages/Event'
+import ContributionsPage from './pages/ContributionsPage'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/project" element={<ProjectPage/>} />
           <Route path="/blogs" element={<BlogPage/>} />
           <Route path="/event" element={<Event/>} />
+          <Route path="/contributions" element={<ContributionsPage/>} />
         </Routes>
       </Router>
     </>
