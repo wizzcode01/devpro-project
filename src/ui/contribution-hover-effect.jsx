@@ -38,20 +38,21 @@ export const HoverEffect = ({ items, className }) => {
             )}
           </AnimatePresence>
 
-          <Card>
-            <CardTitle className="">{item.title}</CardTitle>
-            <CardDescription className="">{item.desc}</CardDescription>
+        <Card>
+          <CardTitle className="text-white">{item.title}</CardTitle>
+          <CardDescription className="text-zinc-400">{item.desc}</CardDescription>
 
-            {/* Render icons here */}
-            <div className="flex items-center gap-4 mt-6 text-zinc-300">
-              {item.icons?.map((iconObj, i) => (
-                <div key={i} className="flex items-center gap-1 text-zinc-300">
-                  <span className="text-lg">{iconObj.icon}</span>
-                  <span className="text-sm">{iconObj.num}</span>
-                </div>
-              ))}
-            </div>
-          </Card>
+          {/* Icons */}
+          <div className="flex items-center gap-4 mt-6">
+            {item.icons?.map((iconObj, i) => (
+              <div key={i} className="flex items-center gap-1 text-zinc-200">
+                <span className="text-lg">{iconObj.icon}</span>
+                <span className="text-sm">{iconObj.num}</span>
+              </div>
+            ))}
+          </div>
+        </Card>
+
         </a>
       ))}
     </div>
@@ -62,16 +63,17 @@ export const Card = ({ className, children }) => {
   return (
     <div
       className={cn(
-        "rounded-2xl h-80 w-full overflow-hidden bg-zinc-800 border border-transparent group-hover:dark:border-white/[0.2] relative z-20",
+        "rounded-2xl h-80 w-full overflow-hidden bg-zinc-800 border border-transparent group-hover:dark:border-white/[0.2] relative z-20 p-4",
         className
       )}
     >
       <div className="relative z-50">
-        <div className="text-zinc-300">{children}</div>
+        {children} 
       </div>
     </div>
   );
 };
+
 
 export const CardTitle = ({ className, children }) => {
   return (

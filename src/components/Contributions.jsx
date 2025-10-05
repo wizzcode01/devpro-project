@@ -105,14 +105,14 @@ const Contributions = () => {
         }
     ]
    return (
-     <div className="max-w-5xl mx-auto px-8">
-        <h1 className="text-2xl md:text-3xl text-white mb-6 font-bold max-w-5xl mx-auto px-8 mt-40">
-           Latest contributions to open source
-        </h1>
-        <div className="max-w-5xl mx-auto relative mb-20 overflow-hidden">
-           <HoverEffect items={contributions} />
-        </div>
-    </div>
+      <div className="max-w-5xl mx-auto px-8">
+         <h1 className="text-2xl md:text-3xl text-white mb-6 font-bold mt-40">
+         Latest contributions to open source
+         </h1>
+         <div className="max-w-5xl mx-auto relative mb-20 overflow-hidden">
+         <HoverEffect items={contributions} />
+         </div>
+     </div>
    )
 }
 
