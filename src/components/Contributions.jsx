@@ -105,13 +105,38 @@ const Contributions = () => {
         }
     ]
    return (
-      <div className="max-w-5xl mx-auto px-8">
+      <div className="max-w-5xl mx-auto  relative mb-20 px-8">
          <h1 className="text-2xl md:text-3xl text-white mb-6 font-bold mt-40">
          Latest contributions to open source
          </h1>
-         <div className="max-w-5xl mx-auto relative mb-20 overflow-hidden">
-         <HoverEffect items={contributions} />
-         </div>
+         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto mt-20 gap-10">
+               {contributions.map((array, index) => (
+               <div 
+               key={index}
+               className="flex flex-col justify-between items-start gap-3 border border-zinc-800 bg-gradient-to-b from-zinc-800 to-zinc-900 px-4 py-4 duration-150 rounded-xl shadow-sm">
+               <h1 className="text-lg font-semibold text-white">{array.title}</h1>
+               <p className="text-[15px] text-zinc-400  leading-relaxed">{array.desc}</p>
+
+               <div className="flex items-center gap-4 mt-2">
+                {array.icons.map((iconArray, id) => (
+                  <div 
+                  key={id}
+                  className="flex  items-center gap-1 text-zinc-400 ">
+                     {iconArray.icon}
+                     {iconArray.num}
+                  {/* <div className="flex items-center gap-1">
+                     {iconArray.icon}
+                     {iconArray.num}
+                  </div> */}
+                  </div> 
+               ))}
+               </div>
+               </div>
+             ))}
+       </div>
+       <div className="flex justify-center items-center">
+          <button className="bg-zinc-900 text-white border border-zinc-400 hover:bg-zinc-800 p-2 px-8 rounded-lg mt-10">Show More</button>
+       </div>
      </div>
    )
 }
