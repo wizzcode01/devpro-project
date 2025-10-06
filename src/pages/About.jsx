@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 
 const About = () => {
 
-    const timeline = [
+  const timeline = [
   {
     year: "2023",
     events: [
@@ -60,23 +60,23 @@ const About = () => {
     <div className="bg-zinc-900">  
       <Navbar/> 
       <div className="max-w-5xl mx-auto px-4"> 
-        <div className="flex flex-col gap-8 mt-20">
+        <div className="flex flex-col mt-20">
           {/* Use grid properly */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-10 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-4 md:gap-10 p-2 items-center">
             
             {/* LEFT CONTENT */}
-            <div className="md:col-span-3 flex flex-col gap-8 text-start">
-              <h1 className="text-white text-5xl font-bold leading-tight">
+            <div className="md:col-span-3 flex flex-col gap-8 p-3 text-start order-2 md:order-1">
+              <h1 className="text-white text-3xl md:text-5xl font-bold leading-tight">
                 Hey! I'm <span className="text-blue-400">Tyler Durden </span> 
                 and I'm a full stack soap engineer.
               </h1>
-              <p className="text-zinc-400 text-lg leading-relaxed">
+              <p className="text-zinc-400 md:text-lg text-sm leading-relaxed">
                 I've been obsessed with technology ever since I was a kid. When I wasn't taking apart my family's computer (sorry, mom), I was teaching myself how to code. Fast forward a few years, and now I'm a full-fledged code ninja with an insatiable thirst for creating beautiful websites and functional applications.
               </p>
             </div>
             
             {/* RIGHT CONTENT (Image + Socials) */}
-            <div className="md:col-span-1 flex flex-col items-center gap-4 ">
+            <div className="md:col-span-1 flex flex-col  p-3 gap-4 order-1 md:order-2">
               <div className="w-52 h-52 flex items-center justify-center font-bold rounded-2xl overflow-hidden">
                 <img src={Logo} alt="logo-img" className="rounded-lg w-52 h-52 object-cover" />
               </div>
@@ -88,20 +88,20 @@ const About = () => {
             </div>
 
           </div>
-             <p className="text-zinc-400 text-lg leading-relaxed">
+             <p className="text-zinc-400 md:text-lg text-sm p-5 leading-relaxed">
                 When I'm not busy slaying bugs and writing code, I'm usually busy indulging in my two favorite hobbies: hot sauce and dad jokes. I firmly believe that a good laugh and a dash of hot sauce can fix just about anything, including bugs in my code (okay, maybe not that last part).
               </p>
               <div>
-                 <h1 className='text-zinc-400'>Here's a timeline of what I've been upto</h1>
+                 <h1 className='text-zinc-400 p-5 md:p-0 text-sm'>Here's a timeline of what I've been upto</h1>
                  {timeline.map((item, index) => (
-                 <div key={index} className='flex flex-col ml-14 gap-6 mt-10'>
+                 <div key={index} className='flex flex-col md:ml-14 gap-6 mt-10 md:p-0 p-5'>
                     <span className='text-xl font-bold text-white'>{item.year}</span>
                     <div>
                         {item.events.map((event, i) => (
                             <div
                                 key={i}
-                                className='flex items-center gap-2'>
-                                <FaCheckCircle className=' text-blue-400'/> <p className='text-zinc-400 leading-relaxed'>{event}</p>
+                                className='flex md:items-center items-start gap-2'>
+                                <FaCheckCircle className=' text-blue-400'/> <p className='text-zinc-400 leading-relaxed text-sm'>{event}</p>
                             </div>
                         ))}
                     </div> 
