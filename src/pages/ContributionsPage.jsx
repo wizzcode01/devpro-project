@@ -16,7 +16,8 @@ const ContributionsPage = () => {
                  }, {
                     icon: <FaStar/>,
                     num: 158
-                 }]
+                 }],
+               link: "https://github.com/manuarora700/react-code-editor"  
             },
             {
                 title: "react-code-editor",
@@ -27,7 +28,8 @@ const ContributionsPage = () => {
                  }, {
                     icon: <FaStar/>,
                     num: 158
-                 }]
+                 }],
+                 link: "https://github.com/manuarora700/simple-developer-portfolio-website"
             },
             {
                 title: "react-code-editor",
@@ -38,7 +40,8 @@ const ContributionsPage = () => {
                  }, {
                     icon: <FaStar/>,
                     num: 158
-                 }]
+                 }],
+                 link: "https://github.com/manuarora700/devmedium"
             },
             {
                 title: "react-code-editor",
@@ -49,7 +52,8 @@ const ContributionsPage = () => {
                  }, {
                     icon: <FaStar/>,
                     num: 158
-                 }]
+                 }],
+                 link: "https://github.com/manuarora700/tictactoe"
             },
             {
                 title: "react-code-editor",
@@ -60,7 +64,8 @@ const ContributionsPage = () => {
                  }, {
                     icon: <FaStar/>,
                     num: 158
-                 }]
+                 }],
+                 link: "https://github.com/manuarora700/sendgrid-contact-form"
             },
             {
                 title: "react-code-editor",
@@ -71,7 +76,8 @@ const ContributionsPage = () => {
                  }, {
                     icon: <FaStar/>,
                     num: 158
-                 }]
+                 }],
+                 link: "https://github.com/manuarora700/100-days-interview-preparation"
             },
             {
                 title: "react-code-editor",
@@ -82,7 +88,8 @@ const ContributionsPage = () => {
                  }, {
                     icon: <FaStar/>,
                     num: 158
-                 }]
+                 }],
+                 link: "https://github.com/manuarora700/tictactoe"
             },
             {
                 title: "react-code-editor",
@@ -93,7 +100,8 @@ const ContributionsPage = () => {
                  }, {
                     icon: <FaStar/>,
                     num: 158
-                 }]
+                 }],
+                 link: "https://github.com/manuarora700/hashnode-github-backup"
             },
             {
                 title: "react-code-editor",
@@ -104,95 +112,8 @@ const ContributionsPage = () => {
                  }, {
                     icon: <FaStar/>,
                     num: 158
-                 }]
-            },
-             {
-                title: "react-code-editor",
-                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
-                icons : [{ 
-                    icon: <FaShareAlt/>,
-                    num: 57,
-                 }, {
-                    icon: <FaStar/>,
-                    num: 158
-                 }]
-            },
-             {
-                title: "react-code-editor",
-                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
-                icons : [{ 
-                    icon: <FaShareAlt/>,
-                    num: 57,
-                 }, {
-                    icon: <FaStar/>,
-                    num: 158
-                 }]
-            },
-             {
-                title: "react-code-editor",
-                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
-                icons : [{ 
-                    icon: <FaShareAlt/>,
-                    num: 57,
-                 }, {
-                    icon: <FaStar/>,
-                    num: 158
-                 }]
-            },
-             {
-                title: "react-code-editor",
-                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
-                icons : [{ 
-                    icon: <FaShareAlt/>,
-                    num: 57,
-                 }, {
-                    icon: <FaStar/>,
-                    num: 158
-                 }]
-            },
-             {
-                title: "react-code-editor",
-                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
-                icons : [{ 
-                    icon: <FaShareAlt/>,
-                    num: 57,
-                 }, {
-                    icon: <FaStar/>,
-                    num: 158
-                 }]
-            },
-             {
-                title: "react-code-editor",
-                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
-                icons : [{ 
-                    icon: <FaShareAlt/>,
-                    num: 57,
-                 }, {
-                    icon: <FaStar/>,
-                    num: 158
-                 }]
-            },
-             {
-                title: "react-code-editor",
-                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
-                icons : [{ 
-                    icon: <FaShareAlt/>,
-                    num: 57,
-                 }, {
-                    icon: <FaStar/>,
-                    num: 158
-                 }]
-            },
-             {
-                title: "react-code-editor",
-                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
-                icons : [{ 
-                    icon: <FaShareAlt/>,
-                    num: 57,
-                 }, {
-                    icon: <FaStar/>,
-                    num: 158
-                 }]
+                 }],
+                 link: "https://github.com/manuarora700/100-days-interview-preparation"
             },
              {
                 title: "react-code-editor",
@@ -204,6 +125,103 @@ const ContributionsPage = () => {
                     icon: <FaStar/>,
                     num: 158
                  }],
+                 link: "https://github.com/manuarora700/javascript-interview-questions"
+            },
+             {
+                title: "react-code-editor",
+                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
+                icons : [{ 
+                    icon: <FaShareAlt/>,
+                    num: 57,
+                 }, {
+                    icon: <FaStar/>,
+                    num: 158
+                 }],
+                 link: "https://github.com/manuarora700/react-onrender"
+            },
+             {
+                title: "react-code-editor",
+                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
+                icons : [{ 
+                    icon: <FaShareAlt/>,
+                    num: 57,
+                 }, {
+                    icon: <FaStar/>,
+                    num: 158
+                 }],
+                 link: "https://github.com/manuarora700/create-react-app"
+            },
+             {
+                title: "react-code-editor",
+                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
+                icons : [{ 
+                    icon: <FaShareAlt/>,
+                    num: 57,
+                 }, {
+                    icon: <FaStar/>,
+                    num: 158
+                 }],
+                 link: "https://github.com/manuarora700/portfolio"
+            },
+             {
+                title: "react-code-editor",
+                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
+                icons : [{ 
+                    icon: <FaShareAlt/>,
+                    num: 57,
+                 }, {
+                    icon: <FaStar/>,
+                    num: 158
+                 }],
+                 link: "https://github.com/manuarora700/tailwind-vanillajs-boilerplate"
+            },
+             {
+                title: "react-code-editor",
+                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
+                icons : [{ 
+                    icon: <FaShareAlt/>,
+                    num: 57,
+                 }, {
+                    icon: <FaStar/>,
+                    num: 158
+                 }],
+                 link: "https://github.com/manuarora700/swagshop"
+            },
+             {
+                title: "react-code-editor",
+                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
+                icons : [{ 
+                    icon: <FaShareAlt/>,
+                    num: 57,
+                 }, {
+                    icon: <FaStar/>,
+                    num: 158
+                 }],
+                 link:"https://github.com/manuarora700/awesome-tech-blogs"
+            },
+             {
+                title: "react-code-editor",
+                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
+                icons : [{ 
+                    icon: <FaShareAlt/>,
+                    num: 57,
+                 }, {
+                    icon: <FaStar/>,
+                    num: 158
+                 }],
+                 link: "https://github.com/manuarora700/fireship.io"
+            },
+             {
+                title: "react-code-editor",
+                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
+                icons : [{ 
+                    icon: <FaShareAlt/>,
+                    num: 57,
+                 }, {
+                    icon: <FaStar/>,
+                    num: 158
+                 }],
+                 link: "https://github.com/manuarora700/mapfvisualizer"
 
             },
              {
@@ -215,7 +233,8 @@ const ContributionsPage = () => {
                  }, {
                     icon: <FaStar/>,
                     num: 158
-                 }]
+                 }],
+                 link: "https://github.com/manuarora700/data-structures-algorithms-interviews"
             },
              {
                 title: "react-code-editor",
@@ -226,7 +245,8 @@ const ContributionsPage = () => {
                  }, {
                     icon: <FaStar/>,
                     num: 158
-                 }]
+                 }],
+                 link: "https://github.com/manuarora700/opensource.razorpay.com"
             }
         ]
     return (
@@ -245,7 +265,8 @@ const ContributionsPage = () => {
     </div>
      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto md:mt-20 mt-10 gap-10 p-6">
                    {contributions.map((array, index) => (
-                   <div
+                   <a
+                     href={array?.link}
                      key={index}
                      className="relative group p-2 rounded-2xl "
                      onMouseEnter={() => setHoveredIndex(index)}
@@ -289,7 +310,7 @@ const ContributionsPage = () => {
                ))}
                </div>
                </div>
-             </div>
+             </a>
           ))}
        </div>
        <div className="flex justify-center items-center">

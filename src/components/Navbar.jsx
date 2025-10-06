@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-evenly lg:max-w-6xl mx-auto md:w-full w-[90%] relative">
       <div className="bg-zinc-800 text-white border border-[#3f3f3f] flex items-center rounded-2xl h-13 px-4 w-[95%] md:w-2xl lg:mr-14 mt-7">
-        <div className="flex items-center gap-4 md:gap-12 font-semibold w-full justify-between">
+        <div className="flex items-center gap-4 md:gap-12 font-semibold w-96 justify-between">
           <Link to="/" className="flex items-center gap-2 ">
             <div className="w-8 h-8 flex items-center justify-center font-bold rounded-full overflow-hidden">
               <img src={Logo} alt="logo-img" className="rounded-full" />
@@ -28,7 +28,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8 text-[15px] font-semibold">
+          <nav className="hidden md:flex items-center gap-8 text-[15px] w-96 font-semibold">
             {navLinks.map((link, index) => (
               <div
                 key={index}
@@ -39,7 +39,7 @@ const Navbar = () => {
                 <AnimatePresence>
                   {hoveredIndex === index && (
                     <motion.span
-                      className="absolute inset-0 bg-neutral-200/10 dark:bg-zinc-700/80 rounded-2xl"
+                      className="absolute inset-0 bg-neutral-200/10 dark:bg-zinc-700/80 rounded-2xl z-0"
                       layoutId={"hoverNavbar"}
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1, transition: { duration: 0.2 } }}

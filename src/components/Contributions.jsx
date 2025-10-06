@@ -8,105 +8,114 @@ const Contributions = () => {
     
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const contributions = [
-        {
-            title: "react-code-editor",
-            desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
-            icons : [{ 
-                icon: <FaShareAlt/>,
-                num: 57,
-             }, {
-                icon: <FaStar/>,
-                num: 158
-             }]
-        },
-        {
-            title: "react-code-editor",
-            desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
-            icons : [{ 
-                icon: <FaShareAlt/>,
-                num: 57,
-             }, {
-                icon: <FaStar/>,
-                num: 158
-             }]
-        },
-        {
-            title: "react-code-editor",
-            desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
-            icons : [{ 
-                icon: <FaShareAlt/>,
-                num: 57,
-             }, {
-                icon: <FaStar/>,
-                num: 158
-             }]
-        },
-        {
-            title: "react-code-editor",
-            desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
-            icons : [{ 
-                icon: <FaShareAlt/>,
-                num: 57,
-             }, {
-                icon: <FaStar/>,
-                num: 158
-             }]
-        },
-        {
-            title: "react-code-editor",
-            desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
-            icons : [{ 
-                icon: <FaShareAlt/>,
-                num: 57,
-             }, {
-                icon: <FaStar/>,
-                num: 158
-             }]
-        },
-        {
-            title: "react-code-editor",
-            desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
-            icons : [{ 
-                icon: <FaShareAlt/>,
-                num: 57,
-             }, {
-                icon: <FaStar/>,
-                num: 158
-             }]
-        },
-        {
-            title: "react-code-editor",
-            desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
-            icons : [{ 
-                icon: <FaShareAlt/>,
-                num: 57,
-             }, {
-                icon: <FaStar/>,
-                num: 158
-             }]
-        },
-        {
-            title: "react-code-editor",
-            desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
-            icons : [{ 
-                icon: <FaShareAlt/>,
-                num: 57,
-             }, {
-                icon: <FaStar/>,
-                num: 158
-             }]
-        },
-        {
-            title: "react-code-editor",
-            desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
-            icons : [{ 
-                icon: <FaShareAlt/>,
-                num: 57,
-             }, {
-                icon: <FaStar/>,
-                num: 158
-             }]
-        }
+         {
+                title: "react-code-editor",
+                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
+                icons : [{ 
+                    icon: <FaShareAlt/>,
+                    num: 57,
+                 }, {
+                    icon: <FaStar/>,
+                    num: 158
+                 }],
+               link: "https://github.com/manuarora700/react-code-editor"  
+            },
+            {
+                title: "react-code-editor",
+                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
+                icons : [{ 
+                    icon: <FaShareAlt/>,
+                    num: 57,
+                 }, {
+                    icon: <FaStar/>,
+                    num: 158
+                 }],
+                 link: "https://github.com/manuarora700/simple-developer-portfolio-website"
+            },
+            {
+                title: "react-code-editor",
+                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
+                icons : [{ 
+                    icon: <FaShareAlt/>,
+                    num: 57,
+                 }, {
+                    icon: <FaStar/>,
+                    num: 158
+                 }],
+                 link: "https://github.com/manuarora700/devmedium"
+            },
+            {
+                title: "react-code-editor",
+                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
+                icons : [{ 
+                    icon: <FaShareAlt/>,
+                    num: 57,
+                 }, {
+                    icon: <FaStar/>,
+                    num: 158
+                 }],
+                 link: "https://github.com/manuarora700/tictactoe"
+            },
+            {
+                title: "react-code-editor",
+                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
+                icons : [{ 
+                    icon: <FaShareAlt/>,
+                    num: 57,
+                 }, {
+                    icon: <FaStar/>,
+                    num: 158
+                 }],
+                 link: "https://github.com/manuarora700/sendgrid-contact-form"
+            },
+            {
+                title: "react-code-editor",
+                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
+                icons : [{ 
+                    icon: <FaShareAlt/>,
+                    num: 57,
+                 }, {
+                    icon: <FaStar/>,
+                    num: 158
+                 }],
+                 link: "https://github.com/manuarora700/100-days-interview-preparation"
+            },
+            {
+                title: "react-code-editor",
+                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
+                icons : [{ 
+                    icon: <FaShareAlt/>,
+                    num: 57,
+                 }, {
+                    icon: <FaStar/>,
+                    num: 158
+                 }],
+                 link: "https://github.com/manuarora700/tictactoe"
+            },
+            {
+                title: "react-code-editor",
+                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
+                icons : [{ 
+                    icon: <FaShareAlt/>,
+                    num: 57,
+                 }, {
+                    icon: <FaStar/>,
+                    num: 158
+                 }],
+                 link: "https://github.com/manuarora700/hashnode-github-backup"
+            },
+            {
+                title: "react-code-editor",
+                desc: "Build your own code editor that compiles and run 40+ porgramming languages.",
+                icons : [{ 
+                    icon: <FaShareAlt/>,
+                    num: 57,
+                 }, {
+                    icon: <FaStar/>,
+                    num: 158
+                 }],
+                 link: "https://github.com/manuarora700/100-days-interview-preparation"
+            },
     ]
    return (
       <div className="max-w-5xl mx-auto  relative mb-20 px-8">
@@ -115,7 +124,8 @@ const Contributions = () => {
          </h1>
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto mt-20 gap-10">
                {contributions.map((array, index) => (
-                   <div
+                   <a
+                     href={array?.link}
                      key={index}
                      className="relative group p-2 rounded-2xl "
                      onMouseEnter={() => setHoveredIndex(index)}
@@ -155,7 +165,7 @@ const Contributions = () => {
                      ))}
                      </div>
                      </div>
-                     </div>
+                     </a>
                   ))}
                   
        </div>

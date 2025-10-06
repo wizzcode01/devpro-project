@@ -1,8 +1,9 @@
 import { useState } from "react"
 import { FaApple, FaGoogle, FaMicrosoft, FaMarker, FaCheckCircle, FaCheck } from "react-icons/fa"
-// import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Work = () => {
+   const [hoveredIndex, setHoveredIndex] = useState(null);
     const companies = [
         {
           name : "Apple",
@@ -120,19 +121,40 @@ const Work = () => {
         <div className="lg:flex lg:flex-row flex flex-col gap-5 lg:m-20 m-5">
               <div className="flex lg:flex-col gap-8 relative z-20 lg:p-6 p-1 overflow-x-auto whitespace-nowrap ">
                 {companies.map((company, index) => (
-                <div
-                key={index}
-                    onClick={() => setCompanyDetail(companyDetail === index? 0 : index)}
-                    className={`flex items-center gap-2 rounded cursor-pointer transition-all ${companyDetail === index? "bg-[#3d3d3d] px-4 py-2" : ""}`}>  
-                    <button className="rounded-full p-1 bg-[#535353]">
-                    {company.icon} 
-                    </button>   
-                    <button className="text-zinc-400">
-                    {company.name}
-                    </button>   
-                </div>    
-                ))}
+                  <div
+                    key={index}
+                    className="relative group rounded-2xl px-2 py-2 cursor-pointer"
+                    onMouseEnter={() => setHoveredIndex(index)}
+                    onMouseLeave={() => setHoveredIndex(null)}
+                  >
+                    <AnimatePresence>
+                      {hoveredIndex === index && (
+                        <motion.span
+                          className="absolute inset-0 bg-neutral-200/10 dark:bg-zinc-700/80 rounded-lg"
+                          layoutId={"hoverWork"}
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1, transition: { duration: 0.2 } }}
+                          exit={{ opacity: 0, transition: { duration: 0.15, delay: 0.1 } }}
+                        />
+                      )}
+                    </AnimatePresence>
+                 <div
+                  key={index}
+                  onClick={() => setCompanyDetail(companyDetail === index ? 0 : index)}
+                  className={`relative z-20 flex items-center gap-2 rounded-lg cursor-pointer transition-all duration-200 
+                    px-4 py-2 
+                    ${companyDetail === index ? "bg-neutral-200/10 dark:bg-zinc-700/80" : ""}`}
+                >
+                  <div className="rounded-full p-1 bg-[#535353] flex items-center justify-center">
+                    {company.icon}
+                  </div>
+                  <span className="text-zinc-400 font-medium">{company.name}</span>
+                </div>
+
+                </div>
+                  ))}
               </div>
+
       
             <div 
               className="flex flex-col gap-4 mb-4">
