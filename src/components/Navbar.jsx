@@ -40,7 +40,7 @@ const Navbar = () => {
                   {hoveredIndex === index && (
                     <motion.span
                       className="absolute inset-0 bg-neutral-200/10 dark:bg-zinc-700/80 rounded-2xl"
-                      layoutId={`hoverNavbar-${index}`}
+                      layoutId={"hoverNavbar"}
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1, transition: { duration: 0.2 } }}
                       exit={{ opacity: 0, transition: { duration: 0.15, delay: 0.1 } }}

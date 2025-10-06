@@ -15,7 +15,8 @@ const Event = () => {
             mean: "codementor.io",
             title: "Components Of A Great Portfolio ",
             heads: "I talk about how to create a targeted website to land more job interviews and freelance clients with all the other things that matter. Hosted on codementor.",
-            link: "Watch Video"
+            link: "Watch Video",
+            link2: "https://www.youtube.com/watch?v=viXpJ5Xwtfs"
 
         },
     },    
@@ -26,7 +27,8 @@ const Event = () => {
             mean: "roc8.careers",
             title: "Crafting The Perfect Portfolio Website For Developers ",
             heads: "Talked about how to effectively utilise a portfolio website to put yourself in the best position to win.",
-            link: "Watch Video"
+            link: "Watch Video",
+            link2: "https://www.youtube.com/watch?v=yKVCl1jFkQQ"
 
         },
     },
@@ -37,7 +39,8 @@ const Event = () => {
             mean: "Youtube",
             title: "How To Use Algochurn To Clear Technical Interviews With Ease. ",
             heads: "Algochurn is a free resource that helps front-end developers practice machine coding questions. Here I talk about how to effectively make use of Algochurn.",
-            link: "Watch Video"
+            link: "Watch Video",
+            link2: "https://www.youtube.com/watch?v=sZA-WrS39KI&t=19s",
 
         },
     },    
@@ -47,7 +50,8 @@ const Event = () => {
             mean: "Youtube",
             title: "How To Implement Debouncing In React ",
             heads: "Debouncing is a method of preventing a function from being invoked too often. In this video, I talk about how to create a custom debounce function from scratch.",
-            link: "Watch Video"
+            link: "Watch Video",
+            link2: "https://www.youtube.com/watch?v=uncrKqVtgrc",
 
         },
     }    
@@ -66,11 +70,21 @@ const Event = () => {
            </div>
         </div>
     {events.map((eventData, index) => (
-     <div 
+     <a 
+     href={eventData?.desc.link2}
+     target="_blank"
      key={index}
-     className="md:flex flex flex-col items-center md:gap-5 md:ml-10 group cursor-pointer">
-          <img src={eventData.image} alt="" className="w-72 h-72 object-contain" />
+     className="md:flex md:flex-row flex flex-col items-center gap-5 md:ml-20 group cursor-pointer md:mt-0 mt-20">
+         <div className="md:w-72 md:h-72 w-full h-full rounded-2xl overflow-hidden flex-shrink-0">
+            <img
+                src={eventData.image}
+                alt=""
+                className="w-full h-full md:object-contain object-cover"
+            />
+        </div>
 
+
+          
         <div
             className="flex flex-col md:gap-6 gap-3 ">
             <div className="flex items-center gap-4 text-zinc-400">
@@ -82,7 +96,7 @@ const Event = () => {
             <small className="flex items-center group-hover:text-blue-400 transition duration-150 gap-2 text-zinc-500 text-[16px]"><FaYoutube/>{eventData.desc.link}</small>
             </div>
         </div>  
-     </div>
+     </a>
      ))}
      </div>
      <Footer/>
