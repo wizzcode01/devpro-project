@@ -229,18 +229,18 @@ const ContributionsPage = () => {
     return (
     <div className="bg-zinc-900">  
       <Navbar/> 
-    <div className="max-w-5xl mx-auto p-10"> 
-        <div className="flex flex-col gap-6 mt-20">
-            <h1 className="text-5xl font-bold text-white">Committing Code and Crimes</h1>
-           <h1 className="text-5xl font-bold text-white">Against <span className="text-blue-400"> Open Source World</span></h1>
-           <div className="leading-10 text-zinc-300 text-[15px] text-lg">
+    <div className="max-w-5xl mx-auto md:p-10 p-6"> 
+        <div className="flex flex-col md:gap-6 gap-10 md:mt-20 mt-10">
+            <h1 className="md:text-5xl text-3xl font-bold text-white">Committing Code and Crimes
+           Against <span className="text-blue-400"> Open Source World</span></h1>
+           <div className="md:leading-10 text-zinc-300 text-[15px] text-lg">
                 <p>A place where you can witness my caffeinated coding adventures and see just how much</p>
                 <p>coffee it takes to fuel my commits. from my first "Hello World" to my latest breakthrough,</p>
                 <p>and everything in between.</p>
            </div>
         </div>
     </div>
-     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto mt-20 gap-10">
+     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto md:mt-20 mt-10 gap-10 p-6">
                {contributions.map((array, index) => (
                <div 
                key={index}
