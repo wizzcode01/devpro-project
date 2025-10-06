@@ -56,7 +56,7 @@ const Event = () => {
    return (
     <div className="bg-zinc-900">  
       <Navbar/> 
-    <div className="max-w-5xl mx-auto p-10"> 
+    <div className="max-w-5xl mx-auto p-10 "> 
         <div className="flex flex-col gap-6 mt-20">
            <h1 className="text-5xl font-bold text-white">I speak at conferences about how  <span className="text-blue-400">PHP is the best</span></h1>
            <div className="leading-10 text-zinc-300 text-[15px] text-lg">
@@ -68,7 +68,7 @@ const Event = () => {
     {events.map((eventData, index) => (
      <div 
      key={index}
-     className="flex items-center gap-5 ml-10">
+     className="flex items-center gap-5 ml-10 group cursor-pointer">
           <img src={eventData.image} alt="" className="w-72 h-72 object-contain" />
 
         <div
@@ -79,7 +79,7 @@ const Event = () => {
             <div className="flex flex-col gap-3 w-[70%] text-zinc-200">
             <h1 className="text-white font-semibold text-xl">{eventData.desc.title}</h1>
             <p className="text-sm text-zinc-300">{eventData.desc.heads}</p>
-            <small className="flex items-center gap-2 text-zinc-500"><FaYoutube/>{eventData.desc.link}</small>
+            <small className="flex items-center group-hover:text-blue-400 transition duration-150 gap-2 text-zinc-500 text-[16px]"><FaYoutube/>{eventData.desc.link}</small>
             </div>
         </div>  
      </div>
