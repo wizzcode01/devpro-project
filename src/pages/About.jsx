@@ -92,7 +92,7 @@ const About = () => {
                 When I'm not busy slaying bugs and writing code, I'm usually busy indulging in my two favorite hobbies: hot sauce and dad jokes. I firmly believe that a good laugh and a dash of hot sauce can fix just about anything, including bugs in my code (okay, maybe not that last part).
               </p>
               <div>
-                 <h1 className='text-zinc-400 p-5 md:p-0 text-sm'>Here's a timeline of what I've been upto</h1>
+                 <h1 className='text-zinc-400 p-5 md:text-lg text-sm'>Here's a timeline of what I've been upto</h1>
                  {timeline.map((item, index) => (
                  <div key={index} className='flex flex-col md:ml-14 gap-6 mt-10 md:p-0 p-5'>
                     <span className='text-xl font-bold text-white'>{item.year}</span>
