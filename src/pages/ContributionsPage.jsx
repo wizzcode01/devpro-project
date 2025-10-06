@@ -200,7 +200,8 @@ const ContributionsPage = () => {
                  }, {
                     icon: <FaStar/>,
                     num: 158
-                 }]
+                 }],
+
             },
              {
                 title: "react-code-editor",
@@ -265,7 +266,7 @@ const ContributionsPage = () => {
              ))}
        </div>
        <div className="flex justify-center items-center">
-          <button className="bg-zinc-900 text-white border border-zinc-400 hover:bg-zinc-800 p-2 px-8 rounded-lg mt-10">View all on Github</button>
+          <a href="https://github.com/manuarora700?tab=overview&from=2025-10-01&to=2025-10-06" target="_blank" className="bg-zinc-900 text-white border border-zinc-400 hover:bg-zinc-800 p-2 px-8 rounded-lg mt-10">View all on Github</a>
        </div>
     <Footer/>
     </div>

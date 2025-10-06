@@ -13,7 +13,7 @@ const Footer = () => {
                 </div>
                 <span className="lg:text-2xl text-lg font-bold ">Tyler Durden</span>
             </Link>
-        <nav className="lg:flex lg:flex-row flex flex-col  lg:items-center lg:gap-4 gap-7 md:gap-12 text-[15px] font-semibold">
+        <nav className="lg:flex lg:flex-row flex flex-col  lg:items-center gap-7 md:gap-12 text-[15px] font-semibold">
             <Link>About </Link>
             <Link>Project</Link>
             <Link>Contribution</Link>
@@ -22,8 +22,8 @@ const Footer = () => {
         </nav>
         <div className="border-t border-zinc-600 flex flex-col items-center gap-3">
           <small className='m-3 text-zinc-300'>© 2025 Devpro Portfolio Template. All rights reserved.</small>
-          <div className="flex items-center gap-8 text-zinc-500">
-            <FaTwitter/> <FaLinkedin/> <FaGithub/>
+          <div className="flex items-center gap-8 text-zinc-500 cursor-pointer">
+            <FaTwitter className='hover:text-zinc-600'/> <FaLinkedin className='text-zinc-600'/> <FaGithub className='text-zinc-600'/>
           </div>
         </div>  
         </div>

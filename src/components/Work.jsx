@@ -112,14 +112,13 @@ const Work = () => {
      const detail = companies[companyDetail].details[0]
 
    return (
-    <div className="md:max-w-5xl lg:ml-48">
+    <div className="md:max-w-5xl lg:m-48">
         <div className="text-white flex flex-col gap-4 md:m-0 m-5 md:mt-0 mt-20 ">
             <h1 className="text-3xl font-semibold text-white">Work Experience</h1>
             <p className="text-zinc-400 text-lg">I switch a lot of companies. it's mostly about the culture.</p>
         </div>
         <div className="lg:flex lg:flex-row flex flex-col gap-5 lg:m-20 m-5">
-            {/* <BackgroundBeamsWithCollision className="rounded-lg"> */}
-              <div className="flex lg:flex-col gap-8 relative z-20 lg:p-6 p-1 overflow-x-auto whitespace-nowrap mt-5">
+              <div className="flex lg:flex-col gap-8 relative z-20 lg:p-6 p-1 overflow-x-auto whitespace-nowrap ">
                 {companies.map((company, index) => (
                 <div
                 key={index}
@@ -134,9 +133,7 @@ const Work = () => {
                 </div>    
                 ))}
               </div>
-            {/* </BackgroundBeamsWithCollision> */}
-            
-            {/* details of selected company */}
+      
             <div 
               className="flex flex-col gap-4 mb-4">
                 <div className="flex flex-col gap-1">

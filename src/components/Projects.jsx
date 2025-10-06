@@ -11,35 +11,35 @@ const projects = [
     title: "Algochurn",
     description:
       "A web app that allows users to practice for front-end and UI interviews",
-    link: "https://stripe.com",
+    link: "https://www.algochurn.com/",
   },
   {
     image: algochurn,
     title: "Netflix",
     description:
       "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
+    link: "https://www.aceternity.com/",
   },
   {
     image: boxshadows,
     title: "Google",
     description:
       "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+    link: "https://www.tailwindmasterkit.com/",
   },
   {
     image: placeholdertech,
     title: "Meta",
     description:
       "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
+    link: "https://ui.aceternity.com/tools/box-shadows",
   },
   {
     image: tailwindmasterkit,
     title: "Amazon",
     description:
       "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
+    link: "https://ww25.placeholdertech.in/?subid1=20251007-0106-29b4-8644-9e0ccc5b4400",
   },
 ];
 

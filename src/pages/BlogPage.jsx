@@ -11,12 +11,14 @@ const BlogPage = () => {
       date: "November 28, 2022",
       title: "What is a website template",
       desc: "A website template is a pre-designed website that can be customized to suit your needs. In this post, we’ll take a look at what a website template is and why it can be a great creative outlet for writers",
+      link: "https://devpro-aceternity.vercel.app/blogs/what-is-a-website-template"
     
     },
     {
       date: "September 2, 2022",
       title: "What is a blog anywhere",
       desc: "A blog is a website that is updated regularly with new content. It is a great way to share your thoughts and ideas with the world. In this blog post, we will discuss what a blog is and how to create one.",
+      link: "https://devpro-aceternity.vercel.app/blogs/what-is-a-blog-anyway"
 
     },
   ];
@@ -35,7 +37,9 @@ const BlogPage = () => {
         <div className="mt-10">
         <div className="flex flex-col gap-10">
         {blogPostsPage.map((post, idx) => (
-          <div key={idx} className="grid grid-cols-3 gap-6 w-3xl">
+          <a 
+          href={post?.link || "#"}
+          key={idx} className="grid grid-cols-3 gap-6 w-3xl">
             {/* Blog Content with Hover Effect */}
             <div
               className="relative group col-span-3 p-4 rounded-2xl"
@@ -71,7 +75,7 @@ const BlogPage = () => {
                     </a>
               </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
         </div>
