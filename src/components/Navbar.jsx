@@ -18,8 +18,8 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-evenly lg:max-w-6xl mx-auto md:w-full w-[90%] relative">
-      <div className="md:bg-zinc-800 md:text-white md:border md:border-[#3f3f3f] flex items-center rounded-2xl h-13 px-4 w-[95%] md:w-2xl lg:mr-14 mt-7">
-        <div className="flex items-center gap-4  font-semibold w-96 justify-between">
+      <div className="lg:bg-zinc-800 md:text-white lg:border lg:border-[#3f3f3f] flex items-center rounded-2xl h-13 px-4 w-[95%] md:w-2xl lg:mr-14 mt-7">
+        <div className="flex items-center gap-4  font-semibold w-full lg:w-96 justify-between">
           <Link to="/" className="">
             <div className="flex items-center justify-start w-36 gap-2 font-bold overflow-hidden">
               <img src={Logo} alt="logo-img" className="w-8 h-8 rounded-full" />
@@ -29,7 +29,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8 text-[15px] w-96 font-semibold">
+          <nav className="hidden lg:flex items-center gap-8 text-[15px] w-96 font-semibold">
             {navLinks.map((link, index) => (
               <div
                 key={index}
@@ -61,7 +61,7 @@ const Navbar = () => {
 
           {/* Mobile Toggle */}
           <button
-            className="md:hidden text-white text-xl"
+            className="lg:hidden text-white text-xl"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <FaTimes /> : <FaBars />}
@@ -70,15 +70,15 @@ const Navbar = () => {
       </div>
 
       {/* CV Button (Desktop) */}
-      <div className="mt-7 hidden md:block">
+      <div className="mt-7 hidden lg:block">
         <button className="text-white text-sm bg-gradient-to-r from-[#464d55] to-[#25292e] px-4 py-4 duration-150 active:outline-none hover:opacity-80 rounded-lg">
           Download CV
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Medium-mobile Menu */}
       {isOpen && (
-        <div className="absolute min-h-screen bg-zinc-800 top-20 left-0 w-full flex flex-col justify-center items-center gap-10 md:hidden z-50 rounded-b-2xl">
+        <div className="absolute min-h-screen bg-zinc-800 top-20 left-0 w-full flex flex-col justify-center items-center gap-10 lg:hidden z-50 rounded-b-2xl">
           {navLinks.map((link, index) => (
             <Link
               key={index}

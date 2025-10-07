@@ -118,7 +118,7 @@ const Work = () => {
             <h1 className="text-3xl font-semibold text-white">Work Experience</h1>
             <p className="text-zinc-400 text-lg">I switch a lot of companies. it's mostly about the culture.</p>
         </div>
-        <div className="lg:flex lg:flex-row flex flex-col md:w-5xl mt-4 justify-center gap-5">
+        <div className="lg:flex lg:flex-row flex flex-col md:w-5xl lg:mt-10 mt-4 justify-center gap-5">
               <div className="flex lg:flex-col gap-4 relative z-20 p-1 overflow-x-auto whitespace-nowrap ">
                 {companies.map((company, index) => (
                   <div
