@@ -119,11 +119,11 @@ const Work = () => {
             <p className="text-zinc-400 text-lg">I switch a lot of companies. it's mostly about the culture.</p>
         </div>
         <div className="lg:flex lg:flex-row flex flex-col gap-5 lg:m-20 m-5">
-              <div className="flex lg:flex-col gap-8 relative z-20 lg:p-6 p-1 overflow-x-auto whitespace-nowrap ">
+              <div className="flex lg:flex-col gap-4 relative z-20 p-1 overflow-x-auto whitespace-nowrap ">
                 {companies.map((company, index) => (
                   <div
                     key={index}
-                    className="relative group rounded-2xl px-2 py-2 cursor-pointer"
+                    className="relative group rounded-2xl cursor-pointer"
                     onMouseEnter={() => setHoveredIndex(index)}
                     onMouseLeave={() => setHoveredIndex(null)}
                   >

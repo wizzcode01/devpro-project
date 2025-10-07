@@ -19,12 +19,13 @@ const Navbar = () => {
   return (
     <div className="flex justify-evenly lg:max-w-6xl mx-auto md:w-full w-[90%] relative">
       <div className="bg-zinc-800 text-white border border-[#3f3f3f] flex items-center rounded-2xl h-13 px-4 w-[95%] md:w-2xl lg:mr-14 mt-7">
-        <div className="flex items-center gap-4 md:gap-12 font-semibold w-96 justify-between">
-          <Link to="/" className="flex items-center gap-2 ">
-            <div className="w-8 h-8 flex items-center justify-center font-bold rounded-full overflow-hidden">
-              <img src={Logo} alt="logo-img" className="rounded-full" />
+        <div className="flex items-center gap-4  font-semibold w-96 justify-between">
+          <Link to="/" className="">
+            <div className="flex items-center justify-start w-36 gap-2 font-bold overflow-hidden">
+              <img src={Logo} alt="logo-img" className="w-8 h-8 rounded-full" />
+              <span className="text-[15px] font-bold hidden md:block">Tyler Durden</span>
             </div>
-            <span className="text-[15px] font-bold hidden md:block">Tyler Durden</span>
+           
           </Link>
 
           {/* Desktop Nav */}
