@@ -45,7 +45,7 @@ const projects = [
 
 const Project = () => {
   return (
-    <div className="max-w-5xl mx-auto px-8">
+    <div className="max-w-5xl mx-auto px-8 md:mt-36">
       <h1 className="text-2xl font-bold text-white mb-6">
         I've been building a lot of things
       </h1>

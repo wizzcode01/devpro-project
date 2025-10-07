@@ -113,12 +113,12 @@ const Work = () => {
      const detail = companies[companyDetail].details[0]
 
    return (
-    <div className="md:max-w-5xl lg:m-48">
-        <div className="text-white flex flex-col gap-4 md:m-0 m-5 md:mt-0 mt-20 ">
+    <div className="md:max-w-5xl mx-auto p-6 md:p-0">
+        <div className="text-white flex flex-col gap-4 md:p-8 md:mt-20 mt-10">
             <h1 className="text-3xl font-semibold text-white">Work Experience</h1>
             <p className="text-zinc-400 text-lg">I switch a lot of companies. it's mostly about the culture.</p>
         </div>
-        <div className="lg:flex lg:flex-row flex flex-col gap-5 lg:m-20 m-5">
+        <div className="lg:flex lg:flex-row flex flex-col md:w-5xl md:mt-10 mt-4 justify-center gap-5">
               <div className="flex lg:flex-col gap-4 relative z-20 p-1 overflow-x-auto whitespace-nowrap ">
                 {companies.map((company, index) => (
                   <div

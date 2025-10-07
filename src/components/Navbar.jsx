@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-evenly lg:max-w-6xl mx-auto md:w-full w-[90%] relative">
-      <div className="bg-zinc-800 text-white border border-[#3f3f3f] flex items-center rounded-2xl h-13 px-4 w-[95%] md:w-2xl lg:mr-14 mt-7">
+      <div className="md:bg-zinc-800 md:text-white md:border md:border-[#3f3f3f] flex items-center rounded-2xl h-13 px-4 w-[95%] md:w-2xl lg:mr-14 mt-7">
         <div className="flex items-center gap-4  font-semibold w-96 justify-between">
           <Link to="/" className="">
             <div className="flex items-center justify-start w-36 gap-2 font-bold overflow-hidden">
@@ -61,7 +61,7 @@ const Navbar = () => {
 
           {/* Mobile Toggle */}
           <button
-            className="md:hidden text-white text-2xl"
+            className="md:hidden text-white text-xl"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <FaTimes /> : <FaBars />}
@@ -78,18 +78,18 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-20 left-0 w-full bg-zinc-800 border-t border-[#3f3f3f] flex flex-col items-center gap-6 py-6 md:hidden z-50 rounded-b-2xl">
+        <div className="absolute min-h-screen bg-zinc-800 top-20 left-0 w-full flex flex-col justify-center items-center gap-10 md:hidden z-50 rounded-b-2xl">
           {navLinks.map((link, index) => (
             <Link
               key={index}
               to={link.path}
               onClick={() => setIsOpen(false)}
-              className="text-gray-200 hover:text-gray-400"
+              className="text-gray-200 text-lg hover:text-gray-400"
             >
               {link.title}
             </Link>
           ))}
-          <button className="text-white text-sm bg-gradient-to-r from-[#464d55] to-[#25292e] px-4 py-2 duration-150 hover:opacity-80 rounded-lg">
+          <button className="text-white text-lg bg-gradient-to-r from-[#464d55] to-[#25292e] px-4 py-2 duration-150 hover:opacity-80 rounded-lg">
             Download CV
           </button>
         </div>
