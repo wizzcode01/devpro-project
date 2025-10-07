@@ -268,7 +268,7 @@ const ContributionsPage = () => {
                    <a
                      href={array?.link}
                      key={index}
-                     className="relative group p-2 rounded-2xl "
+                     className="relative group p-1 rounded-2xl "
                      onMouseEnter={() => setHoveredIndex(index)}
                      onMouseLeave={() => setHoveredIndex(null)}
                      >

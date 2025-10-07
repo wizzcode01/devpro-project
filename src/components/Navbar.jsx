@@ -40,11 +40,11 @@ const Navbar = () => {
                 <AnimatePresence>
                   {hoveredIndex === index && (
                     <motion.span
-                      className="absolute inset-0 bg-neutral-200/10 dark:bg-zinc-700/80 rounded-2xl z-0"
+                      className="absolute inset-0 bg-[rgba(229,229,229,0.1)] dark:bg-[rgba(63,63,70,0.8)] rounded-2xl z-0 will-change-transform will-change-opacity"
                       layoutId={"hoverNavbar"}
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1, transition: { duration: 0.2 } }}
-                      exit={{ opacity: 0, transition: { duration: 0.15, delay: 0.1 } }}
+                      exit={{ opacity: 0, transition: { duration: 0.15, delay: 0.1, ease: [0.25, 0.1, 0.25, 1.0] }}}
                     />
                   )}
                 </AnimatePresence>

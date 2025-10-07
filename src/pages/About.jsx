@@ -62,7 +62,7 @@ const About = () => {
       <div className="max-w-5xl mx-auto px-4"> 
         <div className="flex flex-col mt-20">
           {/* Use grid properly */}
-          <div className="grid grid-cols-1 md:grid-cols-4 md:gap-10 p-2 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-4 p-2 items-center">
             
             {/* LEFT CONTENT */}
             <div className="md:col-span-3 flex flex-col gap-8 p-3 text-start order-2 md:order-1">
@@ -76,7 +76,7 @@ const About = () => {
             </div>
             
             {/* RIGHT CONTENT (Image + Socials) */}
-            <div className="md:col-span-1 flex flex-col  p-3 gap-4 order-1 md:order-2">
+            <div className="md:col-span-1 flex flex-col md:p-0 p-3 gap-4 order-1 md:order-2">
               <div className="w-52 h-52 flex items-center justify-center font-bold rounded-2xl overflow-hidden">
                 <img src={Logo} alt="logo-img" className="rounded-lg w-52 h-52 object-cover" />
               </div>
